@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: $font-primary, $font-secondary;
+	background-color: $body-bg;
+	font-size: $font-size;
+	color: $color;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 20px;
+	margin-bottom: 38px;
+	line-height: 1.5;
+}
+
+a {
+	color: $color;
+}
+
+.container {
+	width: 100%;
+	max-width: 1320px + 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,33 @@
+.accordion {
+	width: 100%;
+
+	&-item__content {
+		display: none;
+	}
+}
+
+.active {
+	.accordion {
+		&-item {
+			&__button {
+				display: block;
+				background-color: $accordion-active-bg;
+				margin-bottom: 0;
+				border-radius: 16px 16px 0 0;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			&__content {
+				display: block;
+				background-color: $accordion-active-bg;
+				border-radius: 0 0 16px 16px;
+				padding: 0 20px 10px 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+

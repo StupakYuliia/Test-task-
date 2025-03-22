@@ -1,4 +1,134 @@
 @media screen and (max-width: 1024px) {
+	h2 {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 14px;
+		margin-bottom: 34px;
+	}
+
+	.products {
+		&__cards {
+			margin-bottom: 100px;
+		}
+
+		&__card {
+			margin: 11px;
+			max-width: 158px;
+
+			&-img {
+				margin-bottom: 10px;
+
+				img {
+					width: 158px;
+					height: 199px;
+				}
+
+				&-hover {
+					img {
+						width: 98px;
+						height: 139px;
+					}
+				}
+			}
+
+			&-title {
+				font-size: 14px;
+			}
+
+			&-desc {
+				margin-bottom: 6px;
+				font-size: 12px;
+			}
+
+			&-price {
+				font-size: 14px;
+
+				&_old {
+					margin-right: 0;
+				}
+			}
+		}
+
+		&__question {
+			flex-direction: column;
+
+			&-info {
+				margin: 0;
+
+				p {
+					font-size: 14px;
+					margin-bottom: 40px;
+				}
+			}
+
+			&-title {
+				font-size: 24px;
+				font-weight: 500;
+			}
+
+			&-accordion {
+				.accordion-item {
+					&__button {
+						font-size: 16px;
+						padding: 8px 36px 8px 10px;
+						margin-bottom: 10px;
+
+						&:before {
+							width: 1px;
+							height: 10px;
+							top: 16px;
+							right: 18px;
+						}
+
+						&:after {
+							width: 10px;
+							height: 1px;
+							top: 20px;
+							right: 14px;
+						}
+
+						span {
+							width: 18px;
+							height: 18px;
+							top: 12px;
+							right: 10px;
+						}
+
+						.active {
+							border-radius: none;
+						}
+					}
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+
+			.active {
+				.accordion {
+					&-item {
+						&__button {
+							margin: 0;
+							border-radius: 12px 12px 0 0;
+						}
+
+						&__content {
+							border-radius: 0 0 12px 12px;
+							padding: 10px;
+							margin-bottom: 20px;
+
+							p {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 

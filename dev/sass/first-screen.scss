@@ -1,3 +1,141 @@
-h1 {
-    color: blue;
+.products {
+	padding: 40px 0;
+
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px;
+		margin-bottom: 120px;
+		justify-content: center;
+	}
+
+	&__card {
+		margin: 20px;
+		max-width: 300px;
+    	width: 100%;
+
+		&-img {
+			margin-bottom: 28px;
+
+			img {
+				width: 300px;
+				height: 377px;
+				border-radius: 16px;
+			}
+
+			&-default {
+				display: block;
+			}
+
+			&-hover {
+				display: none;
+			}
+
+			&:hover
+			&-default {
+				display: none;
+			}
+
+			&:hover
+			&-hover {
+				display: block;
+			}
+		}
+
+		&-title {
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 2px;
+		}
+
+		&-desc {
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+
+		&-price {
+			font-weight: 700;
+			line-height: 1.5;
+
+			&_old {
+				font-weight: 400;
+				color: #A3A3A3;
+				text-decoration: line-through;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__question {
+		display: flex;
+
+		&-info {
+			max-width: 600px;
+			margin-right: 80px;
+			p {
+				span {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&-title {
+			margin-bottom: 10px;
+		}
+
+		&-accordion {
+			max-width: 640px;
+			width: 100%;
+			.accordion-item {
+				&__button {
+					position: relative;
+					font-size: 20px;
+					line-height: 1.5;
+					width: 100%;
+					text-align: left;
+					background-color: $grey-bg;
+					border: none;
+					padding: 12px 50px 12px 20px;
+					border-radius: 12px;
+					margin-bottom: 20px;
+
+					&:before {
+						content: "";
+						width: 2px;
+						height: 14px;
+						background-color: $color;
+						display: inline-block;
+						position: absolute;
+						top: 22px;
+						right: 35px;
+					}
+
+					&:after {
+						content: "";
+						width: 14px;
+						height: 2px;
+						background-color: $color;
+						display: inline-block;
+						position: absolute;
+						top: 28px;
+						right: 29px;
+					}
+
+					span {
+						position: absolute;
+						width: 24px;
+						height: 24px;
+						border: 1.5px solid $color;
+						border-radius: 50%;
+						display: inline-block;
+						top: 18px;
+    					right: 24px;
+					}
+				}
+				p {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
 }
